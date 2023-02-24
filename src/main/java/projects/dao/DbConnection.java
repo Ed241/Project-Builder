@@ -15,8 +15,9 @@ public class DbConnection {
 	private static String USER = "projects";
 
 	public static Connection getConnection() {
-		String url = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&useSSl=false", HOST, PORT, SCHEMA, USER,
-				PASSWORD);
+		String url = "jdbc:mysql://" + HOST + ":" + PORT + "/" + SCHEMA + "?user=" + USER + "&password=" + PASSWORD + "&useSSl=false";
+		
+		//"jdbc:mysql://%s:%d/%s?user=%s&password=%s&useSSl=false"
 		
 		System.out.println("Connecting with url=" + url);
 		
