@@ -19,11 +19,11 @@ public class DbConnection {
 		
 		//"jdbc:mysql://%s:%d/%s?user=%s&password=%s&useSSl=false"
 		
-		System.out.println("Connecting with url=" + url);
+		System.out.println("Connection to schema 'projects' is successful");
 		
 		try {
 			Connection conn = DriverManager.getConnection(url);
-			System.out.println("Successfully Connected!!");
+			
 			return conn;
 			
 			
